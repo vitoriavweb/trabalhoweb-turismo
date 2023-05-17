@@ -1,0 +1,6 @@
+.aa {
+    background-image: url(../img/foto1.jpg);
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+}

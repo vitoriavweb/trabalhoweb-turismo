@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="myText">Este é um exemplo de texto.</p>
+<p class="myText">Aqui está outro texto para demonstração.</p>
+
+<button onclick="aumentarFonte()">Aumentar Fonte</button>
+<button onclick="diminuirFonte()">Diminuir Fonte</button>
+
+<script>
+  var elements = document.getElementsByClassName('myText');
+  var fontSize = 16;
+
+  function aumentarFonte() {
+    fontSize += 2;
+
+    for (var i = 0; i < elements.length; i++) {
+      elements[i].style.fontSize = fontSize + 'px';
+    }
+  }
+
+  function diminuirFonte() {
+    fontSize -= 2;
+
+    for (var i = 0; i < elements.length; i++) {
+      elements[i].style.fontSize = fontSize + 'px';
+    }
+  }
+</script>
+
+</body>
+</html>
